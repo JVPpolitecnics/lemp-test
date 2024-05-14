@@ -1,0 +1,14 @@
+version: '3'
+services:
+  vue:
+    build:
+      context: ./vue
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+  landing:
+    build:
+      context: ./landing
+      dockerfile: Dockerfile
+    ports:
+      - "8081:80"
